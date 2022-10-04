@@ -3,3 +3,15 @@
 // 78 -> третьей цифры нет
 // 32679 -> 6
 
+Console.Clear();
+Console.WriteLine("программа, которая выводит третью цифру заданного числа или сообщает, что третьей цифры нет. ");
+
+Console.Write("Введите число из трех цифр: ");
+int anyNumber = Convert.ToInt32(Console.ReadLine());
+string anyNumberText = Convert.ToString(anyNumber);
+if (anyNumberText.Length > 2){
+  Console.WriteLine("третья цифра -> " + anyNumberText[2]);
+}
+else {
+  Console.WriteLine("-> третьей цифры нет (введено не трехзначное число) ");
+}
