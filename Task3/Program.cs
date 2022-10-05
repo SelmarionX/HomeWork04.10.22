@@ -16,7 +16,8 @@ void CheckingTheDayOfTheWeek (int dayNumber)
    {
   Console.WriteLine("этот день выходной -> да");
   }
-  else if (dayNumber < 1 || dayNumber > 7) {
+  else if (dayNumber < 1 || dayNumber > 7)
+   {
     Console.WriteLine("Вы ввели неверное значение дня недели");
   }
   else Console.WriteLine("этот день не выходной -> нет");
